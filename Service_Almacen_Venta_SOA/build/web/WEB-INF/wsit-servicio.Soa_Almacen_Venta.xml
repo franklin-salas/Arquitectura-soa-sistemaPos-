@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Soa_Almacen_Venta+" targetNamespace="http://servicio/" xmlns:tns="http://servicio/" 
+ >
+    <message name="registrarAlmacen"/>
+    <message name="registrarAlmacenResponse"/>
+    <message name="editarAlmacen"/>
+    <message name="editarAlmacenResponse"/>
+    <message name="buscarAlmacen"/>
+    <message name="buscarAlmacenResponse"/>
+    <message name="listarAlmacen"/>
+    <message name="listarAlmacenResponse"/>
+    <message name="eliminarAlmacen"/>
+    <message name="eliminarAlmacenResponse"/>
+    <portType name="Soa_Almacen_Venta">
+        <operation name="registrarAlmacen">
+            <input message="tns:registrarAlmacen"/>
+            <output message="tns:registrarAlmacenResponse"/>
+        </operation>
+        <operation name="editarAlmacen">
+            <input message="tns:editarAlmacen"/>
+            <output message="tns:editarAlmacenResponse"/>
+        </operation>
+        <operation name="buscarAlmacen">
+            <input message="tns:buscarAlmacen"/>
+            <output message="tns:buscarAlmacenResponse"/>
+        </operation>
+        <operation name="listarAlmacen">
+            <input message="tns:listarAlmacen"/>
+            <output message="tns:listarAlmacenResponse"/>
+        </operation>
+        <operation name="eliminarAlmacen">
+            <input message="tns:eliminarAlmacen"/>
+            <output message="tns:eliminarAlmacenResponse"/>
+        </operation>
+    </portType>
+    <binding name="Soa_Almacen_VentaPortBinding" type="tns:Soa_Almacen_Venta">
+        <operation name="registrarAlmacen">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editarAlmacen">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="buscarAlmacen">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="listarAlmacen">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="eliminarAlmacen">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="Soa_Almacen_Venta+">
+        <port name="Soa_Almacen_VentaPort" binding="tns:Soa_Almacen_VentaPortBinding"/>
+    </service>
+</definitions>

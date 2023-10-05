@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicio/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio/">
+
+<xs:element name="addCosto" type="tns:addCosto"/>
+
+<xs:element name="addCostoResponse" type="tns:addCostoResponse"/>
+
+<xs:element name="addDetalle" type="tns:addDetalle"/>
+
+<xs:element name="addDetalleResponse" type="tns:addDetalleResponse"/>
+
+<xs:element name="addMuestra" type="tns:addMuestra"/>
+
+<xs:element name="addMuestraResponse" type="tns:addMuestraResponse"/>
+
+<xs:element name="buscarAlmacen" type="tns:buscarAlmacen"/>
+
+<xs:element name="buscarAlmacenResponse" type="tns:buscarAlmacenResponse"/>
+
+<xs:element name="buscarColor" type="tns:buscarColor"/>
+
+<xs:element name="buscarColorResponse" type="tns:buscarColorResponse"/>
+
+<xs:element name="buscarDiseno" type="tns:buscarDiseno"/>
+
+<xs:element name="buscarDisenoResponse" type="tns:buscarDisenoResponse"/>
+
+<xs:element name="buscarPersona" type="tns:buscarPersona"/>
+
+<xs:element name="buscarPersonaResponse" type="tns:buscarPersonaResponse"/>
+
+<xs:element name="buscarRollo" type="tns:buscarRollo"/>
+
+<xs:element name="buscarRolloResponse" type="tns:buscarRolloResponse"/>
+
+<xs:element name="buscarTela" type="tns:buscarTela"/>
+
+<xs:element name="buscarTelaResponse" type="tns:buscarTelaResponse"/>
+
+<xs:element name="editarAlmacen" type="tns:editarAlmacen"/>
+
+<xs:element name="editarAlmacenResponse" type="tns:editarAlmacenResponse"/>
+
+<xs:element name="editarColor" type="tns:editarColor"/>
+
+<xs:element name="editarColorResponse" type="tns:editarColorResponse"/>
+
+<xs:element name="editarDiseno" type="tns:editarDiseno"/>
+
+<xs:element name="editarDisenoResponse" type="tns:editarDisenoResponse"/>
+
+<xs:element name="editarPersona" type="tns:editarPersona"/>
+
+<xs:element name="editarPersonaResponse" type="tns:editarPersonaResponse"/>
+
+<xs:element name="editarRollo" type="tns:editarRollo"/>
+
+<xs:element name="editarRolloResponse" type="tns:editarRolloResponse"/>
+
+<xs:element name="editarTela" type="tns:editarTela"/>
+
+<xs:element name="editarTelaResponse" type="tns:editarTelaResponse"/>
+
+<xs:element name="eliminarAlmacen" type="tns:eliminarAlmacen"/>
+
+<xs:element name="eliminarAlmacenResponse" type="tns:eliminarAlmacenResponse"/>
+
+<xs:element name="eliminarColor" type="tns:eliminarColor"/>
+
+<xs:element name="eliminarColorResponse" type="tns:eliminarColorResponse"/>
+
+<xs:element name="eliminarCosto" type="tns:eliminarCosto"/>
+
+<xs:element name="eliminarCostoResponse" type="tns:eliminarCostoResponse"/>
+
+<xs:element name="eliminarDiseno" type="tns:eliminarDiseno"/>
+
+<xs:element name="eliminarDisenoResponse" type="tns:eliminarDisenoResponse"/>
+
+<xs:element name="eliminarMuestra" type="tns:eliminarMuestra"/>
+
+<xs:element name="eliminarMuestraResponse" type="tns:eliminarMuestraResponse"/>
+
+<xs:element name="eliminarPersona" type="tns:eliminarPersona"/>
+
+<xs:element name="eliminarPersonaResponse" type="tns:eliminarPersonaResponse"/>
+
+<xs:element name="eliminarRollo" type="tns:eliminarRollo"/>
+
+<xs:element name="eliminarRolloResponse" type="tns:eliminarRolloResponse"/>
+
+<xs:element name="eliminarTela" type="tns:eliminarTela"/>
+
+<xs:element name="eliminarTelaResponse" type="tns:eliminarTelaResponse"/>
+
+<xs:element name="getDetalle" type="tns:getDetalle"/>
+
+<xs:element name="getDetalleResponse" type="tns:getDetalleResponse"/>
+
+<xs:element name="listarAlmacen" type="tns:listarAlmacen"/>
+
+<xs:element name="listarAlmacenResponse" type="tns:listarAlmacenResponse"/>
+
+<xs:element name="listarColor" type="tns:listarColor"/>
+
+<xs:element name="listarColorResponse" type="tns:listarColorResponse"/>
+
+<xs:element name="listarCosto" type="tns:listarCosto"/>
+
+<xs:element name="listarCostoResponse" type="tns:listarCostoResponse"/>
+
+<xs:element name="listarDiseno" type="tns:listarDiseno"/>
+
+<xs:element name="listarDisenoResponse" type="tns:listarDisenoResponse"/>
+
+<xs:element name="listarMuestra" type="tns:listarMuestra"/>
+
+<xs:element name="listarMuestraResponse" type="tns:listarMuestraResponse"/>
+
+<xs:element name="listarPersona" type="tns:listarPersona"/>
+
+<xs:element name="listarPersonaCliente" type="tns:listarPersonaCliente"/>
+
+<xs:element name="listarPersonaClienteResponse" type="tns:listarPersonaClienteResponse"/>
+
+<xs:element name="listarPersonaEmpleado" type="tns:listarPersonaEmpleado"/>
+
+<xs:element name="listarPersonaEmpleadoResponse" type="tns:listarPersonaEmpleadoResponse"/>
+
+<xs:element name="listarPersonaProveedor" type="tns:listarPersonaProveedor"/>
+
+<xs:element name="listarPersonaProveedorResponse" type="tns:listarPersonaProveedorResponse"/>
+
+<xs:element name="listarPersonaResponse" type="tns:listarPersonaResponse"/>
+
+<xs:element name="listarRollo" type="tns:listarRollo"/>
+
+<xs:element name="listarRolloResponse" type="tns:listarRolloResponse"/>
+
+<xs:element name="listarTelas" type="tns:listarTelas"/>
+
+<xs:element name="listarTelasResponse" type="tns:listarTelasResponse"/>
+
+<xs:element name="registarColor" type="tns:registarColor"/>
+
+<xs:element name="registarColorResponse" type="tns:registarColorResponse"/>
+
+<xs:element name="registrarAlmacen" type="tns:registrarAlmacen"/>
+
+<xs:element name="registrarAlmacenResponse" type="tns:registrarAlmacenResponse"/>
+
+<xs:element name="registrarDiseno" type="tns:registrarDiseno"/>
+
+<xs:element name="registrarDisenoResponse" type="tns:registrarDisenoResponse"/>
+
+<xs:element name="registrarNota" type="tns:registrarNota"/>
+
+<xs:element name="registrarNotaResponse" type="tns:registrarNotaResponse"/>
+
+<xs:element name="registrarPersona" type="tns:registrarPersona"/>
+
+<xs:element name="registrarPersonaResponse" type="tns:registrarPersonaResponse"/>
+
+<xs:element name="registrarRollo" type="tns:registrarRollo"/>
+
+<xs:element name="registrarRolloResponse" type="tns:registrarRolloResponse"/>
+
+<xs:element name="registrarTela" type="tns:registrarTela"/>
+
+<xs:element name="registrarTelaResponse" type="tns:registrarTelaResponse"/>
+
+<xs:complexType name="registrarAlmacen">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarAlmacenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCosto">
+<xs:sequence>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+<xs:element name="id_proveedor" type="xs:string" minOccurs="0"/>
+<xs:element name="precio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCostoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarNota">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="codFactura" type="xs:string" minOccurs="0"/>
+<xs:element name="observaciones" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+<xs:element name="motivo" type="xs:string" minOccurs="0"/>
+<xs:element name="id_almacen" type="xs:string" minOccurs="0"/>
+<xs:element name="id_persona" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarNotaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAlmacen">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAlmacenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetalle">
+<xs:sequence>
+<xs:element name="idRollo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetalleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarTela">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="altura" type="xs:string" minOccurs="0"/>
+<xs:element name="precioDeVenta" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTela" type="xs:string" minOccurs="0"/>
+<xs:element name="id_diseno" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarTelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarPersona">
+<xs:sequence>
+<xs:element name="carnet" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidos" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarAlmacen">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarAlmacenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPersona">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaEmpleado">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registarColor">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="imagen" type="xs:string" minOccurs="0"/>
+<xs:element name="codBinario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registarColorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarCosto">
+<xs:sequence>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarCostoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarMuestra">
+<xs:sequence>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarMuestraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarTela">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarTelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaProveedor">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaProveedorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarColor">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarColorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarRollo">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarRolloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRollo">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRolloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarDiseno">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarDisenoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarColor">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarColorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaCliente">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPersonaClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarAlmacen">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarAlmacenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarTelas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarTelasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarColor">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="imagen" type="xs:string" minOccurs="0"/>
+<xs:element name="codBinario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarColorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarDiseno">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="imagen" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarDisenoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPersona">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addDetalle">
+<xs:sequence>
+<xs:element name="metraje" type="xs:string" minOccurs="0"/>
+<xs:element name="precio" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_rollo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addDetalleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarDiseno">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="imagen" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarDisenoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarColor">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarColorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarRollo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarRolloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMuestra">
+<xs:sequence>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+<xs:element name="id_color" type="xs:string" minOccurs="0"/>
+<xs:element name="imagen" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMuestraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarRollo">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="metraje" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="id_almacen" type="xs:string" minOccurs="0"/>
+<xs:element name="id_color" type="xs:string" minOccurs="0"/>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarRolloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarDiseno">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarDisenoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarPersona">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="carnet" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidos" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarTela">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="altura" type="xs:string" minOccurs="0"/>
+<xs:element name="precioDeVenta" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTela" type="xs:string" minOccurs="0"/>
+<xs:element name="id_diseno" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarTelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarRollo">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="metraje" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="id_almacen" type="xs:string" minOccurs="0"/>
+<xs:element name="id_color" type="xs:string" minOccurs="0"/>
+<xs:element name="id_tela" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarRolloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarDiseno">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarDisenoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarAlmacen">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarAlmacenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarTela">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarTelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarMuestra">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarMuestraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCosto">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarCostoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarPersona">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
